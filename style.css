@@ -1,0 +1,107 @@
+.main{
+    width: 1560px;
+    height: 720px;
+    display: flex;
+    background-color: #fafafa;
+}
+
+.left{
+    width: 780px;
+    height: 720px;
+}
+
+.right{
+    width: 780px;
+    height: 720px;
+}
+
+#logo {
+    height: 536px;
+    width: 536px;
+    position: relative;
+    border-radius: 50%;
+    border:20px solid #ffffff;
+    top: 72px;
+    left: 126px;
+}
+
+#company{
+    position: absolute;
+    height: 58px;
+    width: 272px;
+    top: 106px;
+    left: 906px;
+}
+
+#first{
+    font-size: 40px;
+    position: absolute;
+    top: 150px;
+    left: 905px;
+    font-family: 'Segoe UI';
+}
+
+#red {
+    color: red;
+}
+
+#second{
+    font-size: 25px;
+    position: absolute;
+    top: 295px;
+    left: 905px;
+    font-family: 'Segoe UI';
+}
+
+#username{
+    position: absolute;
+    top: 372px;
+    left: 905px;
+    height: 40px;
+    width: 429px;
+    padding-left: 20px;
+}
+
+#password{
+    position: absolute;
+    top: 448px;
+    left: 905px;
+    height: 40px;
+    width: 429px;
+    padding-left: 20px;
+}
+
+#Lbutton{
+    position: absolute;
+    top: 527px;
+    left: 905px;
+    height: 45px;
+    width: 138px;
+    display: center;
+    border-radius: 25px;
+    background: red;
+    border-color: red;
+    color: white;
+    font-size: 15px;
+}
+
+#Fpass{
+    position: absolute;
+    top: 539px;
+    left: 1214px;
+    font-size: 15px;
+    color: #adadad;
+    font-family: 'Segoe UI';
+}
+
+#register{
+    position: absolute;
+    top: 595px;
+    left: 905px;
+    font-family: 'Segoe UI';
+    color: #adadad;
+}
+
+#registerlink{
+    color: red;
+}
