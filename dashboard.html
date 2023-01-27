@@ -4,20 +4,281 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <link rel="stylesheet" href="css/style_dashboard.css">
-    <title>Document</title>
+    <title>Dashboard Page</title>
 </head>
 
-<body>
+<body class="main">
     <div class="main">
+        
         <div class="nav">
             <img src="images/menu-bar.svg" id="menu">
             <img src="images/header-logo.svg" id="hlogo">
             <img src="images/search-icon.svg" id="searchicon">
-            <p id="search">Search</p>
+            <input type=text id="search" placeholder="Search"></p>
             <img src="images/notification-icon.svg" id="noticon">
             <img src="images/profile.png" id="profile">
+            <p id="name">John Doe</p>
+            <img src="images/downward-arrow.svg" id="arrow">
         </div>
+
+        <div class="sidebar">
+            <button class="btn btn-success">
+                <img src="images/dashboard-default.svg" width="30" /> Dashboard
+            </button>
+            <br>
+            <button class="btn btn-success">
+                <img src="images/graph-default.svg" width="30" /> Graph
+            </button>
+            <br>
+            <button class="btn btn-success">
+                <img src="images/inbox-default.svg" width="30" /> Inbox
+            </button>
+            <br>
+            <button class="btn btn-success">
+                <img src="images/clock-default.svg" width="30" /> Clock
+            </button>
+            <br>
+            <button class="btn btn-success">
+                <img src="images/User-default.svg" width="30" /> User
+            </button>
+            <br>
+            <button class="btn btn-success">
+                <img src="images/maintenance-default.svg" width="30" /> Maintenance
+            </button>
+            <br>
+            <button class="btn btn-success">
+                <img src="images/setting-default.svg" width="30" /> Setting
+            </button>
+        </div>
+
+
+        <div class="dashboard">
+            <H2 id="Dname">Dashboard</H2>
+
+            <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-left-primary shadow py-2">
+                    <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col-auto">
+                                <img src="images/star.svg">
+                            </div>
+                            <div class="col mr-2">
+                                <div class="h5 mb-0">23,456</div>
+                                <div id="products" class="text-xs text-primary mb-1">New Products</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-left-primary shadow py-2">
+                    <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col-auto">
+                                <img src="images/new-product.svg">
+                            </div>
+                            <div class="col mr-2">
+                                <div class="h5 mb-0">2345</div>
+                                <div id="products" class="text-xs text-primary mb-1">Added Products</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-left-primary shadow py-2">
+                    <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col-auto">
+                                <img src="images/total-product.svg" width="40px" height="40px">
+                            </div>
+                            <div class="col mr-2">
+                                <div class="h5 mb-0">32,456</div>
+                                <div id="products" class="text-xs text-primary mb-1">Total Products</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-left-primary shadow py-2">
+                    <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col-auto">
+                                <img src="images/dollar-filled.svg">
+                            </div>
+                            <div class="col mr-2">
+                                <div class="h5 mb-0">5678</div>
+                                <div id="products" class="text-xs text-primary mb-1">Today's Sale</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-left-primary shadow py-2">
+                    <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col-auto">
+                                <img src="images/money-bag.svg">
+                            </div>
+                            <div class="col mr-2">
+                                <div class="h5 mb-0">335,342</div>
+                                <div id="products" class="text-xs  text-primary mb-1">Total Sale</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-md-6 mb-5">
+                <div class="card1 border-left-primary shadow h-400 py-2">
+                    <div class="card-body1">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col-auto">
+                                <p class="graphtime "id="sale">Sale</p>
+                                <p class="graphtime">Weekly</p>
+                                <p class="graphtime">Monthly</p>
+                                <p class="graphtime" id="year">Yearly</p>
+                                <br>
+                                <img src="images/data-graph.png"  id="graph">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-md-6 mb-6">
+                <div class="card2 border-left-primary shadow h-400 py-2">
+                    <div class="card-body2">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col-auto">
+                                <p class="graphtime" id="sale">Sales by Country</p>
+                                <br>
+                                <img id="pie" src="images/pie-chart.svg">
+
+                                <div id="legenda">
+                                    <div class="entry">
+                                      <div id="color-us" class="entry-color"></div>
+                                      <div class="entry-text">United States of America</div>
+                                      <div id="color-canada" class="entry-color"></div>
+                                      <div class="entry-text">Canada</div>
+                                    </div>
+                                    <div class="entry">
+                                      <div id="color-russia" class="entry-color"></div>
+                                      <div class="entry-text">Russia</div>
+                                      <div id="color-india" class="entry-color"></div>
+                                      <div class="entry-text">India</div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="table">
+            <p class="tableheader" id="sale">Invoices</p>
+            <p class="tableheader" id="view">View All</p>
+                <table class="invoice">
+                    <thead>
+                      <tr class="header">
+                        <td scope="col">INVOICE</td>
+                        <td scope="col">COMPANY NAME</td>
+                        <td scope="col">EMAIL</td>
+                        <td scope="col">DUE DATE</td>
+                        <td scope="col">STATUS</td>
+                        <td scope="col">Amount</td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td >651535</td>
+                        <td>Public Adjusting Firm</td>
+                        <td>georgia.young@example.com</td>
+                        <td>24 May, 2020</td>
+                        <td><span id="paid">Paid</span></td>
+                        <td>$47,800</td>
+                      </tr>
+                      <tr>
+                        <td>558612</td>
+                        <td>Other</td>
+                        <td>jessica.hanson@example.com</td>
+                        <td>24 May, 2020</td>
+                        <td><span id="paid">Paid</span></td>
+                        <td>$98,000</td>
+                      </tr>
+                      <tr>
+                        <td>558612</td>
+                        <td>Vendor</td>
+                        <td>alma.lawson@example.com</td>
+                        <td>8 Sep, 2020</td>
+                        <td><span id="paid">Paid</span></td>
+                        <td>$20,900</td>
+                      </tr>
+                      <tr>
+                        <td>558612</td>
+                        <td>Property Management Company</td>
+                        <td>kenzi.lawson@example.com</td>
+                        <td>22 Oct, 2020</td>
+                        <td><span id="paid">Paid</span></td>
+                        <td>$10,570</td>
+                      </tr>
+                      <tr>
+                        <td>651535</td>
+                        <td>Subcontractor Company</td>
+                        <td>jackson.graham@example.com</td>
+                        <td>1 Feb, 2020</td>
+                        <td><span id="failed">Failed</span></td>
+                        <td>$10,200</td>
+                      </tr>
+                      <tr>
+                        <td>653518</td>
+                        <td>Mortgage Company</td>
+                        <td>felicia.reid@example.com</td>
+                        <td>22 Oct, 2020</td>
+                        <td><span id="pending">Pending</span></td>
+                        <td>$12,600</td>
+                      </tr>
+                      <tr>
+                        <td>487441</td>
+                        <td>TPA</td>
+                        <td>dolores.chambers@example.com</td>
+                        <td>21 Sep, 2020</td>
+                        <td><span id="paid">Paid</span></td>
+                        <td>$11,170</td>
+                      </tr>
+                      <tr>
+                        <td>267400</td>
+                        <td>Fire Department</td>
+                        <td>nevaeh.simmons@example.com</td>
+                        <td>17 Oct, 2020</td>
+                        <td><span id="failed">Failed</span></td>
+                        <td>$28,000</td>
+                      </tr>
+                      <tr>
+                        <td>449003</td>
+                        <td>Insurance Carrier</td>
+                        <td>curtis.weaver@example.com</td>
+                        <td>21 Sep, 2020</td>
+                        <td><span id="paid">Paid</span></td>
+                        <td>$10,000</td>
+                      </tr>
+                    </tbody>
+                </table>
+        </div>
+    
     </div>
 </body>
 </html>

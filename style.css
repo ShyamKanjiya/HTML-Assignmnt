@@ -2,6 +2,7 @@
     width: 1560px;
     height: 720px;
     display: flex;
+    position: fixed;
     background-color: #fafafa;
 }
 

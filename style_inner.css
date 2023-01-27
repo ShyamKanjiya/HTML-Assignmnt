@@ -1,0 +1,243 @@
+.main{
+    width: 1560px;
+    height: 1970px;
+    position: relative;
+}
+
+.nav{
+    width: 100%;
+    height: 80px;
+}
+
+#menu{
+    position: absolute;
+    top: 30px;
+    left: 29px;
+    height: 18px;
+    width: 27px;
+    display: inline;
+}
+
+#hlogo{
+    position: absolute;
+    top: 25px;
+    left: 72px;
+    height: 30px;
+    width: 142px;
+    display: inline;
+}
+
+#searchicon{
+    position: absolute;
+    top: 32px;
+    left: 291px;
+    height: 16px;
+    display: inline;
+}
+
+#search{
+    position: absolute;
+    top: 30px;
+    left: 321px;
+    font-family: 'Segoe UI';
+    display: inline;
+    color: black;
+    border: none;
+}
+
+#noticon{
+    position: absolute;
+    top: 28px;
+    left: 1294px;
+    width: 22px;
+    height: 21px;
+}
+
+#profile{
+    position: absolute;
+    top: 18px;
+    left: 1368px;
+    width: 44px;
+    height: 44px;
+}
+
+#name{
+    position: absolute;
+    top: 28px;
+    left: 1424px;
+    font-family: 'Segoe UI';
+    display: inline;
+}
+
+#arrow{
+    position: absolute;
+    top: 30px;
+    left: 1507px;
+}
+
+.sidebar{
+    float:left;
+}
+
+.btn-success{
+    margin-left: 50px;
+    margin-top: 15px;
+    background-color: white;
+    color: black;
+    font-family: 'Segoe UI';
+    font-weight: bold;
+    border-color: white;
+    padding-left: 10px;
+}
+
+.btn-success:hover{
+    color: red;
+    background-color: white;
+    border-color: white;
+}
+
+.btn-success:active{
+    background-color: #ffbf00;
+}
+
+.AnalysisPage{
+    float: right;
+    height: 1890px;
+    width: 1318px;
+    position: absolute;
+    background-color: #fafafa;
+    margin-left: 242px;
+}
+
+#Aname{
+    top: 30px;
+    left: 50px;
+    font-family: 'Segoe UI';
+    position: absolute;
+    font-weight: 550;
+}
+
+.form{
+    height: 1749px;
+    width: 1218px;
+    background-color:white;
+    margin-top: 102px;
+    margin-left: 50px;
+}
+
+.column{
+    font-size: 24px;
+    margin-top: 23px;
+    margin-left: 29px;
+    position: absolute;
+}
+
+#nametxt{
+    height: 49px;
+    width:1157px;
+    margin-left: 30.5px;
+    margin-top: 66.5px;
+    border: 1px solid #ADADAD;
+    border-radius: 5px;
+    padding-left: 15px;
+}
+
+#dropdown{
+    height: 49px;
+    width:1157px;
+    margin-left: 30.5px;
+    margin-top: 21px;
+    border: 1px solid #ADADAD;
+    border-radius: 5px;
+    padding-left: 15px;
+}
+
+#mline{
+    height: 130px;
+    width:1157px;
+    margin-left: 30.5px;
+    margin-top: 20px;
+    border: 1px solid #ADADAD;
+    border-radius: 5px;
+    padding-left: 15px;
+}
+
+#name2{
+    height: 49px;
+    width: 560px;
+    margin-left: 30.5px;
+    margin-top: 66.5px;
+    border: 1px solid #ADADAD;
+    border-radius: 5px;
+    padding-left: 15px;
+}
+
+div.input-block {
+    position: relative;
+  }
+  div.input-block input {
+    font-weight: 500;
+    font-size: 16px;
+    color: #495055;
+    height: 49px;
+    width: 560px;
+    border-radius: 5px;
+    border: 1px solid  #ADADAD;
+    margin-top: 65px;
+    margin-left: 20px;
+    outline:none;
+  }
+  div.input-block span.placeholder {
+    position: absolute;
+    margin: 79px 20px;
+    padding: 0 4px;
+    font-family: Roboto, sans-serif;
+    color:  #6c757d;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    top: 0;
+    left: 17px;
+    transition: all 0.2s;
+    transform-origin: 0% 0%;
+    background: none;
+    pointer-events: none;
+  }
+  div.input-block input:valid + span.placeholder,
+  div.input-block input:focus + span.placeholder {
+    transform: scale(0.8) translateY(-25px);
+    background: #fff;
+  }
+  div.input-block input:focus{
+    color: #284B63;
+    border-color: #284B63;
+  }
+  div.input-block input:focus + span.placeholder {
+    color: #284B63;
+  }
+
+  .grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
+    align-items: center;
+  }
+
+  #pass{
+    height: 49px;
+    width: 560px;
+    margin-top: 0px;
+    border: 1px solid #ADADAD;
+    border-radius: 5px;
+    padding-left: 15px;
+    margin-left: 30px;
+  }
+
+  #DD{
+    width: 560px;
+    margin-left: 20px;
+    height: 49px;
+    border: 1px solid #ADADAD;
+    border-radius: 5px;
+    padding-left: 15px;
+  }
