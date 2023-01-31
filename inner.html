@@ -1,96 +1,295 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-    <link rel="stylesheet" href="css/style_inner.css">
-    <title>Dashboard Page</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/intnerpage-style.css">
+    <title>Innerpage</title>
 </head>
 
-<body class="main">
-    <div class="main">
-        
-        <div class="nav">
-            <img src="images/menu-bar.svg" id="menu">
-            <img src="images/header-logo.svg" id="hlogo">
-            <img src="images/search-icon.svg" id="searchicon">
-            <input type=text id="search" placeholder="Search"></p>
-            <img src="images/notification-icon.svg" id="noticon">
-            <img src="images/profile.png" id="profile">
-            <p id="name">John Doe</p>
-            <img src="images/downward-arrow.svg" id="arrow">
-        </div>
+<body>
+    <div class="container-fluid">
+        <div class="row">
 
-        <div class="sidebar">
-            <button class="btn btn-success">
-                <img src="images/dashboard-default.svg" width="30" /> Dashboard
-            </button>
-            <br>
-            <button class="btn btn-success">
-                <img src="images/graph-default.svg" width="30" /> Graph
-            </button>
-            <br>
-            <button class="btn btn-success">
-                <img src="images/inbox-default.svg" width="30" /> Inbox
-            </button>
-            <br>
-            <button class="btn btn-success">
-                <img src="images/clock-default.svg" width="30" /> Clock
-            </button>
-            <br>
-            <button class="btn btn-success">
-                <img src="images/User-default.svg" width="30" /> User
-            </button>
-            <br>
-            <button class="btn btn-success">
-                <img src="images/maintenance-default.svg" width="30" /> Maintenance
-            </button>
-            <br>
-            <button class="btn btn-success">
-                <img src="images/setting-default.svg" width="30" /> Setting
-            </button>
-        </div>
-
-        <div class="AnalysisPage">
-            <H2 id="Aname">Analysis</H2>
-
-            <div class="form">
-                <p class="column">One Column</p>
-                <input type="text" id="nametxt" placeholder="Name">
-                <select id="dropdown"><option>Dropdown</option></select>
-                <textarea id="mline" placeholder="Multiple line"></textarea>
-
-
-                <p class="column">Two Column</p>
-
-                <div class="grid">
-                    <div>
-                        <input type="text" id="name2" placeholder="Name">
-                    </div>
-                    <div class="input-block">
-                        <input type="text" name="input-text" id="input-text" required spellcheck="false">
-                        <span class="placeholder">Username</span>
-                    </div>
+            <div class="container-fluid" id="navbar" style="padding-right:24px ;">
+                <a id="menubar-logo"><img src="images/menu-bar.svg" alt=" " class="slidebar-icon"></a>
+                <a href="dashboard.html"><img src="images/logo.svg" alt=" " class="logo"></a>
+                <div id="search-part">
+                    <img src="images/search-icon.svg" alt=" " class="search-icon">
+                    <input id="search-input" type="text" name="search" placeholder="Search">
                 </div>
 
-                <div class="grid">
-                    <div>
-                        <input type="text" id="pass" placeholder="Password">
-                    </div>
-                    <div >
-                        <select id="DD"><option>Dropdown</option></select>
-                    </div>
-                </div>
-                
+                <img src="images/notification-icon.svg" alt=" " class="notification">
+                <img src="images/profile.png" alt=" " class="profile-image">
+                <p id="user-name">John Doe</p>
+                <img src="images/select-downward.svg" alt=" " class="downword-arrow">
             </div>
 
         </div>
+        <div class="row">
+            <!-- <div class="container-fluid">
+                <div class="row"> -->
+            <div class="col-2">
+                <div class="side-bar">
+                    <div id="dashboard">
+                        <a href="dashboard.html">
+                            <img src="images/dashboard-default.svg" alt=" ">
+                            <p>Dashboard</p>
+                        </a>
+                    </div>
+                    <div id="analysis-logo-active">
+                        <a href="innerpage.html">
+                            <img src="images/graph-active.svg" alt=" ">
+                            <p>Analysis</p>
+                        </a>
 
+                    </div>
+                    <div id="inbox">
+                        <a href="">
+                            <img src="images/inbox-default.svg" alt=" ">
+                            <p>Inbox</p>
+                        </a>
+
+                    </div>
+                    <div id="history">
+                        <a href="">
+                            <img src="images/clock-default.svg" alt=" ">
+                            <p>History</p>
+                        </a>
+
+                    </div>
+                    <div id="users">
+                        <a href="">
+                            <img src="images/user-default.svg" alt=" ">
+                            <p>Users</p>
+                        </a>
+
+                    </div>
+                    <div id="maintenance">
+                        <a href="">
+                            <img src="images/maintenance-default.svg" alt=" ">
+                            <p>Maintenance</p>
+                        </a>
+                    </div>
+                    <div id="setting">
+                        <a href="">
+                            <img src="images/setting-default.svg" alt=" ">
+                            <p>Setting</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-10" style="padding: 2.4em;">
+                <h3>Analysis</h3>
+                <br>
+                <div style="background-color: #ffff; padding: 2em;">
+                    <form class="one-column">
+                        <h4>One Column</h4>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control">
+                                <option>Dropdown</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                placeholder="Multiple lines"></textarea>
+                        </div>
+                    </form>
+                    <div class="pt-4">
+                        <h4>Two Column</h4>
+                        <form>
+                            <div class="form-row">
+                                <div class="input-block col-md-6">
+                                    <input type="text" required spellcheck="false">
+                                    <span class="placeholder">
+                                        Name
+                                    </span>
+                                </div>
+                                <div class="input-block col-md-6">
+                                    <input type="text" name="input-text" required spellcheck="false">
+                                    <span class="placeholder">
+                                        Username
+                                    </span>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="form-row">
+                                <div class="input-block col-md-6">
+                                    <input type="password" name="password" required spellcheck="false">
+                                    <span class="placeholder">
+                                        Password
+                                    </span>
+                                </div>
+                                <div class="col-md-6">
+                                    <select class="form-control">
+                                        <option>Dropdown</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+
+                    <div class="pt-4">
+                        <h4>Three Column</h4>
+                        <form>
+                            <div class="form-row">
+                                <div class="input-block col-md-4" id="input-focus">
+                                    <input type="text" name="Focus" required spellcheck="false">
+                                    <span class="placeholder">
+                                        Focus
+                                    </span>
+                                </div>
+                                <div class="input-block col-md-4">
+                                    <input type="password" name="password" required spellcheck="false">
+                                    <span class="placeholder">
+                                        Password
+                                    </span>
+                                </div>
+                                <div class="input-block col-md-4">
+                                    <input type="text" name="input-text" required spellcheck="false" value="Johndoe"
+                                        disabled style="border: 1px dashed #ADADAD; color: #ADADAD;">
+                                    <span class="placeholder-disabled" style="color: #ADADAD;">
+                                        Disabled
+                                    </span>
+                                </div>
+                            </div>
+                            <br>
+                        </form>
+                    </div>
+
+                    <div>
+                        <h4>Four Column</h4>
+                        <form>
+                            <div class="form-row">
+                                <div class="input-block col-md-3">
+                                    <input type="text" name="Focus" required spellcheck="false" value="UI Designer">
+                                    <span class="placeholder">
+                                        Designation
+                                    </span>
+                                </div>
+                                <div class="input-block col-md-3">
+                                    <input type="text" name="password" required spellcheck="false">
+                                    <span class="placeholder">
+                                        Name
+                                    </span>
+                                    <div class="form-text small" style="padding-left:1.5em;">Enter your full Name as per
+                                        ID.</div>
+                                </div>
+                                <div class="input-block col-md-3">
+                                    <input type="text" name="input-text" required spellcheck="false" value="Johndoe">
+                                    <span class="placeholder">
+                                        Username
+                                    </span>
+                                </div>
+                                <div class="form-group col-md-3">
+                                    <select class="form-control">
+                                        <option>Select</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <br>
+                        </form>
+                    </div>
+
+                    <div>
+                        <h4>Other Design Elements</h4>
+                        <div class="mt-3">
+                            <h6 class="pb-2">File Upload</h6>
+
+                            <label id="file-upload">
+                                <span id="input-file-label">
+                                    <img src="images/cloud-upload-icon.svg" alt="cloud-upload-icon">
+                                    Upload
+                                </span>
+                                <input type="file" style="display: none;" id="file-input">
+
+                            </label>
+                            <span id="file-name" class="text-muted"> No item selected</span>
+                            <script>
+                                let inputFile = document.getElementById('file-input');
+                                let fileNameField = document.getElementById('file-name');
+                                inputFile.addEventListener('change', function (event) {
+                                    let uploadedFileName = event.target.files[0].name;
+                                    fileNameField.textContent = uploadedFileName;
+                                })
+                            </script>
+                        </div>
+                        <div class="mt-3">
+                            <h6 class="pb-2">Radio Button</h6>
+                            <input type="radio" name="option"><label style="padding-left:0.7em">Option 1</label>
+                            <span style="padding:1em"></span>
+                            <input type="radio" name="option"><label style="padding-left:0.7em">Option 2</label>
+                        </div>
+                        <div class="mt-3">
+                            <h6 class="pb-2">Checkbox</h6>
+                            <input type="checkbox" name="option1"><label style="padding-left:0.7em">Option 1</label>
+                            <span style="padding: 1em;"></span>
+                            <input type="checkbox" name="option2"><label style="padding-left:0.7em">Option 2</label>
+                        </div>
+                        <div class="pt-4">
+                            <h6 class="snackbar">Snackbar</h6>
+                            <div class="snackbar">
+                                <div class="alert alert-primary col-md-6" role="alert" id="errormsg">
+                                    <img src="images/error-icon.svg" alt="" class="snackbar-img">
+                                    This is an error Message!
+                                </div>
+                                <div class="alert alert-primary col-md-6" role="alert" id="infomsg">
+                                    <img src="images/info-icon.svg" alt="" class="snackbar-img">
+                                    This is an information Message!
+                                </div>
+                            </div>
+                            <div class="snackbar">
+                                <div class="alert alert-primary col-md-6" role="alert" id="warningmsg">
+                                    <img src="images/warning-icon.svg" alt="" class="snackbar-img">
+                                    This is a warning Message!
+                                </div>
+                                <div class="alert alert-primary col-md-6" role="alert" id="successmsg">
+                                    <img src="images/success-icon.svg" alt="" class="snackbar-img">
+                                    This is a success Message!
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pt-4">
+                            <h6 class="pb-3">Call to action</h6>
+                            <button type="button" class="btn btn-danger"
+                                style="border-radius: 2em; padding: 0.5em 1.5em 0.5em 1.5em; font-size: 1.2em;">Primary</button>
+                            <span style="padding: 1em;"></span>
+                            <button type="button" class="btn btn-outline-danger"
+                                style="border-radius: 2em; padding: 0.5em 1.4em 0.5em 1.4em; font-size: 1.2em;">Secondary</button>
+                        </div>
+                        <div class="pt-4">
+                            <h6 class="pt-4">Tabs</h6>
+                            <div class="tabs">
+                                <ul>
+                                    <li>Tab1</li>
+                                    <li>Tab2</li>
+                                    <li>Tab3</li>
+                                    <span class="underline"></span>
+                                </ul>
+
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut, voluptates ducimus.
+                                    Amet corrupti minima quisquam ut quod iste ipsam, ratione maxime eum consequatur est
+                                    assumenda porro, culpa quia soluta obcaecati!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- </div>
+            </div> -->
+        </div>
     </div>
-    
+
+    <script src="js/dashboard.js"></script>
+
+
 </body>
+
 </html>
