@@ -1,108 +1,177 @@
-.main{
-    width: 1560px;
-    height: 720px;
+body {
+    background-color: #FAFAFA;
+}
+
+#container {
     display: flex;
-    position: fixed;
-    background-color: #fafafa;
+    justify-content: space-between;
 }
 
-.left{
-    width: 780px;
-    height: 720px;
+.left {
+    margin: 5% 10% 0% 10%;
 }
 
-.right{
-    width: 780px;
-    height: 720px;
-}
-
-#logo {
-    height: 536px;
-    width: 536px;
-    position: relative;
+.left img {
     border-radius: 50%;
-    border:20px solid #ffffff;
-    top: 72px;
-    left: 126px;
+    width: 576px;
+    border: 20px solid #FFFFFF;
+    box-shadow: 0px 4px 31px #0000000A;
 }
 
-#company{
-    position: absolute;
-    height: 58px;
-    width: 272px;
-    top: 106px;
-    left: 906px;
+.right {
+    margin-top: 106px;
 }
 
-#first{
-    font-size: 40px;
-    position: absolute;
-    top: 150px;
-    left: 905px;
+div img {
+    width: 270px;
+}
+
+.top1 {
+    text-align: left;
+    font: normal normal 300 40px/47px Roboto;
+    letter-spacing: 0px;
+    color: #3E3E3E;
     font-family: 'Segoe UI';
 }
 
-#red {
-    color: red;
+span {
+    text-align: left;
+    font: normal normal 900 40px/53px Roboto;
+    letter-spacing: 0px;
+    color: #C8242F;
 }
 
-#second{
-    font-size: 25px;
-    position: absolute;
-    top: 295px;
-    left: 905px;
+.login-text {
+    text-align: left;
+    font: normal normal normal 25px/33px Roboto;
+    letter-spacing: 0px;
+    color: #3E3E3E;
     font-family: 'Segoe UI';
 }
 
-#username{
-    position: absolute;
-    top: 372px;
-    left: 905px;
-    height: 40px;
-    width: 429px;
-    padding-left: 20px;
+input {
+    padding-left: 1rem;
+    margin-bottom: 27px;
+    width: 450px;
+    height: 49px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #ADADAD;
+    border-radius: 5px;
 }
 
-#password{
-    position: absolute;
-    top: 448px;
-    left: 905px;
-    height: 40px;
-    width: 429px;
-    padding-left: 20px;
+.forgot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 77%;
 }
 
-#Lbutton{
-    position: absolute;
-    top: 527px;
-    left: 905px;
-    height: 45px;
+#Lbutton {
+    background: #C8242F 0% 0% no-repeat padding-box;
+    border: none;
+    border-radius: 23px;
     width: 138px;
-    display: center;
-    border-radius: 25px;
-    background: red;
-    border-color: red;
-    color: white;
-    font-size: 15px;
+    height: 45px;
+    color: #FFFFFF;
+    border-radius: 50px;
 }
 
-#Fpass{
-    position: absolute;
-    top: 539px;
-    left: 1214px;
-    font-size: 15px;
-    color: #adadad;
+.forgot p {
+    text-align: left;
+    font: normal normal normal 15px/20px Roboto;
+    letter-spacing: 0px;
+    color: #ADADAD;
     font-family: 'Segoe UI';
 }
 
-#register{
-    position: absolute;
-    top: 595px;
-    left: 905px;
-    font-family: 'Segoe UI';
-    color: #adadad;
+.bottom {
+    display: flex;
 }
 
-#registerlink{
-    color: red;
+.member {
+    text-align: left;
+    font: normal normal normal 15px/20px Roboto;
+    letter-spacing: 0px;
+    color: #ADADAD;
+    font-family: 'Segoe UI';
+}
+
+.register {
+    text-align: left;
+    font: normal normal normal 15px/20px Roboto;
+    letter-spacing: 0px;
+    color: #C8242F;
+    margin-left: 5px;
+    font-family: 'Segoe UI';
+}
+
+
+@media screen and (max-width: 1250px) and (min-width: 821px) {
+    #container {
+        justify-content: space-between;
+    }
+
+    .left {
+        width: 125%;
+        margin: auto;
+    }
+
+    .left img {
+        width: 100%;
+    }
+
+    .right {
+        margin: auto;
+    }
+}
+
+@media screen and (max-width : 820px) {
+    #container {
+        flex-direction: column;
+        margin-top: 3rem;
+    }
+
+    .left img {
+        width: 100%;
+    }
+
+    .right {
+        width: 90%;
+        margin: auto;
+
+    }
+
+    .top img {
+        width: 60%;
+        margin-top: 5%;
+        margin-left: 20%;
+    }
+
+    .top1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .login-text {
+        text-align: center;
+    }
+
+    input {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    button {
+        margin-left: 10%;
+    }
+
+    .forgot {
+        width: 100%;
+    }
+
+    .bottom {
+        justify-content: center;
+    }
 }
