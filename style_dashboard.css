@@ -1,340 +1,371 @@
-.main{
-    width: 1560px;
-    height: 1359px;
-    position: relative;
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background: #FAFAFA;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;    
 }
-
-.nav{
-    width: 100%;
-    height: 80px;
+#navbar{
+    display: flex;
+    height: fit-content ;
+    width: 100em;
+    background-color: #FFFFFF;
 }
-
-#menu{
-    position: absolute;
-    top: 30px;
-    left: 29px;
-    height: 18px;
-    width: 27px;
+#search-part{
+    display: flex;
+}
+#search-input{
+    font-size: 1.02em; 
+    font-weight: 500; 
+    position: relative; 
+    display: inline; 
+    border: 1px white;
+}
+.slidebar-icon{
+    /* logo for sidebar */
+    height: 1.25em;
+    width: 1.25em;
+    margin: 1.56em 0px 0px 0px;
+    float: left;
     display: inline;
+    background-color: #FFFFFF;
 }
-
-#hlogo{
-    position: absolute;
-    top: 25px;
-    left: 72px;
-    height: 30px;
-    width: 142px;
-    display: inline;
+.col-md-2{
+    background-color: #FFFFFF;
 }
-
-#searchicon{
-    position: absolute;
-    top: 32px;
-    left: 291px;
-    height: 16px;
-    display: inline;
+.logo{
+    width: 8.875em;;
+    height: 1.875em;
+    margin: 1.25em 0px 0px 0.625em;
+    float: left;
 }
-
-#search{
-    position: absolute;
-    top: 30px;
-    left: 321px;
-    font-family: 'Segoe UI';
-    display: inline;
-    color: black;
-    border: none;
-}
-
-#noticon{
-    position: absolute;
-    top: 28px;
-    left: 1294px;
-    width: 22px;
-    height: 21px;
-}
-
-#profile{
-    position: absolute;
-    top: 18px;
-    left: 1368px;
-    width: 44px;
-    height: 44px;
-}
-
-#name{
-    position: absolute;
-    top: 28px;
-    left: 1424px;
-    font-family: 'Segoe UI';
-    display: inline;
-}
-
-#arrow{
-    position: absolute;
-    top: 30px;
-    left: 1507px;
-}
-
-.sidebar{
-    float:left;
-}
-
-.btn-success{
-    margin-left: 50px;
-    margin-top: 15px;
-    background-color: white;
-    color: black;
-    font-family: 'Segoe UI';
-    font-weight: bold;
-    border-color: white;
-    padding-left: 10px;
-}
-
-.btn-success:hover{
-    color: red;
-    background-color: white;
-    border-color: white;
-}
-
-.btn-success:active{
-    background-color: #ffbf00;
-}
-
-.dashboard{
-    float: right;
-    height: 1279px;
-    width: 1318px;
-    position: absolute;
-    background-color: #fafafa;
-    margin-left: 242px;
-}
-
-#Dname{
-    top: 30px;
-    left: 50px;
-    font-family: 'Segoe UI';
-    position: absolute;
-    font-weight: 550;
-}
-
-.mb-4{
-    left: 35px;
-    top: 102px;
-    height: 116px;
-    width: 245px;
-    display: inline-block;
-}
-
-.card-body{
-    padding-top: 15px;
-    padding-left: 0px;
-    margin-left: 15px;
+.search-icon{
+    width: 1em;
+    height: 1em;
+    margin: 1.375em;
+    margin-left: 5em;
+    float: left;
     
 }
+.notification{
+    width: 1.313em;
+    height: 1.313em;
+    margin-top: 1.25em;
+    margin-left:45% ;
+}
+.profile-image{
+    width: 35px;
+    height: 35px;
+    margin-left: 2%;
+    margin-top: 12px;
+}
+#user-name{
+    font-size: 0.9375em; 
+    font-weight: 400;  
+    margin-top: 18px; 
+    margin-left: 2%;
+    display: inline; 
+    left: 0;
+}
+.downword-arrow{
+    width: 40px;
+    height: 20px;
+    margin-left: 2%;
+    margin-top: 19px;
 
-.card{
-    border: none;
-    height: 116px;
+}
+#dashboard-logo-active>a>img{
+    width: 1.563em;
+    height: 1.563em;
+    margin-left: 19px;
 }
 
-.col-auto{
-    margin-left: 5px;
-    margin-right: 5px;
-}
-
-.mr-2{
-    margin-left: 20px;
-}
-
-.md-0{
-    height: 33px;
-}
-
-.h5{
-    font-size: 30px;
-}
-
-.mr-2{
-    margin-left: 5px;
-}
-
-.card1{
-    border: none;
-    background-color: white;
-    height: 400px;
-    width: 802px;
-    margin-top: 0px;
-}
-
-.card-body1{
-    margin-top: 5px;
+#dashboard-logo-active{
+    display: inline-block;
+    padding-right: 50px;
+    margin-top: 18px;
     margin-left: 25px;
-    position: absolute;
+    margin-right: 10px;
+    background: rgb(255 239 239);
+    border-radius: 5px;
+}
+#dashboard-logo-active>a>p{
     display: inline-block;
+    color: #C8242F;
+    margin-left: 10px;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
-.graphtime{
-    display: inline;
-    margin-right: 21px;
-    margin-top: 24px;
-    font-size: 16px;
-    font-family: 'Segoe UI';
-}
-
-#sale{
-    margin-right: 490px;
-    font-size: 25px;
-    font-weight: 600;
-}
-
-#graph{
-    margin-top: 25px;
-}
-
-.mb-5{
-    left: 35px;
-    top: 102px;
-    width: 802px;
-    height: 400px;
-    margin-right: 500px;
-    display: inline-block;
-}
-
-.mb-6{
-    left: 30px;
-    width: 385px;
-    top: 54px;
-    height: 400px;
-    display: inline-block;
-}
-
-.card2{
-    border: none;
-    background-color: white;
-    height: 400px;
-    width: 385px;
-    margin-top: 0px;
-}
-
-.card-body2{
-    margin-top: 5px;
-    margin-left: 25px;
-    position: absolute;
-    display: inline-block;
-}
-
-#pie{
-    position: absolute;
-    margin-top: 20px;
+#analysis>a>img{
+    width: 25px;
+    height: 25px;
     margin-left: 45px;
 }
-
-#legenda {
+#analysis>a>p{
+    display: inline-block;
     margin-left: 10px;
-    padding: 5px;
-    margin-top: 270px;
-  }
-  .entry {
+    font-size: 15px;
+    margin-top: 10px;
+    color: black;
+}
+
+#inbox>a>img{
+    width: 25px;
+    height: 25px;
+    margin-left: 45px;
+}
+#inbox>a>p{
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 15px;
+    margin-top: 10px;
+    color: black;
+}
+
+#history>a>img{
+    width: 25px;
+    height: 25px;
+    margin-left: 45px;
+}
+#history>a>p{
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 15px;
+    margin-top: 10px;
+    color: black;
+}
+
+#users>a>img{
+    width: 25px;
+    height: 25px;
+    margin-left: 45px;
+}
+#users>a>p{
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 15px;
+    margin-top: 10px;
+    color: black;
+}
+
+#maintenance>a>img{
+    width: 25px;
+    height: 25px;
+    margin-left: 45px;
+}
+#maintenance>a>p{
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 15px;
+    margin-top: 10px;
+    color: black;
+}
+
+#setting>a>img{
+    width: 25px;
+    height: 25px;
+    margin-left: 45px;
+}
+#setting>a>p{
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 15px;
+    margin-top: 10px;
+    color: black;
+}
+
+
+#first-row-in-dashboard{
     display: flex;
-    align-items: center;
-  }
-  
-  .entry-color {
-      height: 10px;
-      width: 10px;
-      border-radius: 5px;;
-  }
-  
-  .entry-text {
-    margin-left: 5px;
-  }
-  
-  #color-us {
-    background-color: #C8242F;
-  }
-
-  #color-canada{
-    background-color:#A2B86C;
-    margin-left: 20px;
-    
-  }
-  #color-russia{
-    background-color:#F16C20;
-  }
-  #color-india{
-    background-color:#EBC844;
-    margin-left: 150px;
+    padding-left: 2.4em; 
+    margin-right: 1.5em;
 }
 
-.table{
-    width: 1217px;
-    height: 578px;
-    left: 292px;
-    top: 760px;
-    position: absolute;
-    align-items: center;
-    background-color: white;
-    border: none;
+/* graph-part*/
+
+/* for pie chart */
+#legenda {
+margin-left: 20px;
+background-color: white;
+padding: 5px;
+}
+.entry {
+display: flex;
+align-items: center;
 }
 
-.tableheader{
-    display: inline;
-    margin-left: 30px;
-    margin-top: 20px;
-    position: absolute;
+.entry-color {
+height: 10px;
+width: 10px;
+border-radius: 5px;;
 }
 
-#view{
-    margin-left: 1120px;
-    height: 16px;
-    margin-top: 25px;
-    color: red;
+.entry-text {
+margin-left: 5px;
+font-size: 14px;
 }
 
-.invoice{
-    margin-top: 80px;
-    margin-left: 30px;
-    align-content: space-between;
-    border: none;
-    width: 1150px;
+#color-us {
+background-color: #C8242F;
 }
 
-#paid{
-    background-color: lightgreen;
-    color: green;
+#color-canada{
+background-color:#A2B86C;
+margin-left: 1.99em;
+}
+#color-russia{
+background-color:#F16C20;
+}
+#color-india{
+background-color:#EBC844;
+margin-left: 9.1em;
 }
 
-.header{
-    color: #ADADAD;
-
+#sale-by-time-header{
+    display: flex;
+    justify-content: space-between;
 }
+ul{
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+}
+li{
+    list-style: none;
+    padding-right: 1em;
+}
+
+.sales-row{
+    display: flex ;
+}
+.sales-by-time{
+    width: 70em;
+    background-color: #FFFFFF;
+    width: 100%;
+    padding: 2em;
+    margin-top: 1em;
+}
+
+.sales-by-time>img{
+    width: 100%;
+    height: auto;
+}
+.sales-by-country{
+    width: 19em;
+    background-color:white;
+    margin:0em 2em 0 2em;  
+    padding: 2em 2em 1em 2em;
+    margin-top: 1em;
+}
+.sales-by-country>img{
+    width: 15em;
+    height: auto;
+}
+
+/* table part */
 
 .th{
+    border-top: none;
     color: #ADADAD;
 }
 
-#paid{
+#paid-status{
     background-color: #EBFFEF;
     border-radius: 5px;
     padding: 5px 10px 5px 10px;
     color: green;
 }
 
-#failed{
+#failed-status{
     background-color: #FFF5F5;
     border-radius: 5px;
     padding: 5px 10px 5px 10px;
     color: red;
 }
 
-#pending{
+#pending-status{
     background-color: #F8F8F8;
     border-radius: 5px;
     padding: 5px 10px 5px 10px;
-    color: #BABABA;
+    color:#BABABA;
 }
 
-#year{
-    text-decoration-line: underline;
-    color: red;
+.line{
+    padding-bottom: 5px;
+    border-bottom-style: solid;
+    border-bottom-width: 2.8px;
+    width: fit-content;
+}
+
+.card{
+    width: 13em; 
+    margin:0.5em 1em 2em 0.5em; 
+    border-radius: 5px;
+    border-color: white;
+}
+.card-body{
+    padding: 1em;
+}
+.card-body> img{
+    width:2.5em;
+    height:2.5em;
+}
+
+
+#table-head-part{
+    display:flex; 
+    max-width: 100%; 
+    margin-top: 2.5em; 
+    margin-left:2.5em; 
+    margin-right: 2.5em;
+} 
+.table{
+    margin-left:2.5em;
+    margin-bottom: 2.5em; 
+    background-color: #FFFFFF; 
+    padding: 2em; 
+    margin-right: 2.5em;
+    border-radius: 2px;
+
+}
+
+@media (min-width:576px) and (max-width:769px) {
+    table{
+        width: 100%;
+        overflow: hidden;
+    }
+   
+}
+
+@media only screen and (max-width:770){
+    *{
+        justify-self: center;
+        align-items: center;
+    }
+    #side-bar>div{
+        width:fit-content;
+    }
+    #side-bar{
+        display: none;
+    }
+    
+}
+@media only screen and (max-width:1024px){
+    a{
+        justify-content:center;
+    }
+    #user-name{
+        display: none;
+    }
+    .sales-row{
+        display: grid;
+    }
+    #first-row-in-dashboard{
+        display: grid;
+    }
+    .sales-by-country{
+        margin-left: 0;
+    }
 }
